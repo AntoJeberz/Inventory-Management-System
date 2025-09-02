@@ -1,0 +1,53 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <h1><i class="fas fa-boxes"></i> Inventory System</h1>
+    <ul>
+      <li><a href="Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="OrderPage.html" class="active"><i class="fas fa-shopping-cart"></i> Order</a></li>
+      <li><a href="UpdateStock.html"><i class="fas fa-edit"></i> Update</a></li>
+      <li><a href="StockList.html"><i class="fas fa-list"></i> Current Stock</a></li>
+      <li><a href="PlacedOrders.html"><i class="fas fa-clipboard-list"></i> Placed Orders</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="dashboard-header">
+      <h2><i class="fas fa-shopping-cart"></i> Place Order</h2>
+      <p class="dashboard-subtitle">Create a new order for your inventory</p>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="orderproductid"><i class="fas fa-hashtag"></i> Product ID:</label>
+        <input type="number" name="product" id="orderproductid" placeholder="Enter product ID">
+      </div>
+
+      <div class="form-group">
+        <label for="orderquantityid"><i class="fas fa-cubes"></i> Quantity:</label>
+        <input type="number" name="quantity" id="orderquantityid" placeholder="Enter quantity">
+      </div>
+
+      <div class="form-actions">
+        <button id="btn1"><i class="fas fa-check-circle"></i> Place Order</button>
+      </div>
+    </form>
+
+    <div id="div1" class="response-message"></div>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2023 Inventory Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="OrderStock.js"></script>
+</body>
+</html>

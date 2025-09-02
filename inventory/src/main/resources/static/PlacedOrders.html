@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placed Orders</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <h1><i class="fas fa-boxes"></i> Inventory System</h1>
+    <ul>
+      <li><a href="Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="OrderPage.html"><i class="fas fa-shopping-cart"></i> Order</a></li>
+      <li><a href="UpdateStock.html"><i class="fas fa-edit"></i> Update</a></li>
+      <li><a href="StockList.html"><i class="fas fa-list"></i> Current Stock</a></li>
+      <li><a href="PlacedOrders.html" class="active"><i class="fas fa-clipboard-list"></i> Placed Orders</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="dashboard-header">
+      <h2><i class="fas fa-clipboard-list"></i> Placed Orders</h2>
+      <p class="dashboard-subtitle">View all orders placed in the system</p>
+    </div>
+
+    <div class="table-container">
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th><i class="fas fa-hashtag"></i> Order ID</th>
+            <th><i class="fas fa-box"></i> Product ID</th>
+            <th><i class="fas fa-cubes"></i> Quantity</th>
+            <th><i class="fas fa-calendar-alt"></i> Order Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Inventory Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="placedorder.js"></script>
+</body>
+</html>
